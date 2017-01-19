@@ -10,5 +10,6 @@ public interface IRepositoryCatalog {
 	public IRolesPermissionsRepository rolesPermissions();
 	
 	public void saveAndClose() throws SQLException;
+	public void save() throws SQLException;
 	
 }

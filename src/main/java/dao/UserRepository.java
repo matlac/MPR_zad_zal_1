@@ -76,8 +76,4 @@ public class UserRepository extends RepositoryBase<User> implements IUserReposit
 		}
 		return getOne(withLoginAndPassword);
 	}
-
-	public void setupPermissions(User user) {
-
-	}
 }

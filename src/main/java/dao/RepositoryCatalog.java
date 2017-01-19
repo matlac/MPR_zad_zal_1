@@ -43,5 +43,9 @@ public class RepositoryCatalog implements IRepositoryCatalog {
 		connection.close();
 		connection=null;
 	}
+	
+	public void save() throws SQLException {
+		uow.saveChanges();
+	}
 
 }

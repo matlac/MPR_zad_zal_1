@@ -8,6 +8,7 @@ import dao.IRepositoryCatalog;
 import dao.RepositoryCatalog;
 import dao.uow.IUnitOfWork;
 import dao.uow.UnitOfWork;
+import domain.User;
 
 public class App 
 {
