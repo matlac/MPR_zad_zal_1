@@ -5,7 +5,9 @@ import java.sql.SQLException;
 public interface IRepositoryCatalog {
 
 	public IUserRepository users();
-	public IEnumerationValueRepository enumerationValues();
+	public IGroupsRepository groups();
+	public IGroupRolesRepository groupsRoles();
+	public IRolesPermissionsRepository rolesPermissions();
 	
 	public void saveAndClose() throws SQLException;
 	

@@ -2,8 +2,9 @@ package domain;
 
 public class RolesPermissions extends Entity implements IHaveId {
 
-    int id;
-    int roleId;
+    private int id;
+    private String permName;
+    private int permType; // 1 allow, 0 forbidden
 
     @Override
     public int getId() {
@@ -14,11 +15,19 @@ public class RolesPermissions extends Entity implements IHaveId {
         this.id = id;
     }
 
-    public int getRoleId() {
-        return roleId;
+    public String getPermName() {
+        return permName;
     }
 
-    public void setRoleId(int roleId) {
-        this.roleId = roleId;
+    public void setPermName(String perm_name) {
+        this.permName = perm_name;
+    }
+
+    public int getPermType() {
+        return permType;
+    }
+
+    public void setPermType(int perm_type) {
+        this.permType = perm_type;
     }
 }
